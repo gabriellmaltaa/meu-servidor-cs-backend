@@ -1,4 +1,13 @@
 // server.js
+// server.js
+const express = require('express');
+const gamedig = require('gamedig');
+const cors = require('cors'); // Importante se o front-end e back-end estiverem em domínios diferentes
+
+const app = express();
+const port = process.env.PORT || 3000; // Boa prática para deploy
+
+app.use(cors()); // Habilita o CORS para todas as rotas
 
 // --- LISTA DOS SEUS SERVIDORES DE CS2 ---
 const LISTA_DE_SERVIDORES = [
