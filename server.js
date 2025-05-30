@@ -1,5 +1,4 @@
 // server.js
-// server.js
 const express = require('express');
 const gamedig = require('gamedig');
 const cors = require('cors'); // Importante se o front-end e back-end estiverem em domínios diferentes
